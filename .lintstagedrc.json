@@ -1,6 +1,5 @@
 {
-  "*.{js,jsx}": [
-    "eslint --cache"
-  ],
-  "./src/**/*.{css,scss,js,jsx}'": "stylelint"
+  "*.{js,jsx}": "eslint --cache",
+  "./src/**/*.{css,scss}": "stylelint",
+  "./src/**/*.styles.{js,jsx}": "stylelint"
 }
