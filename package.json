@@ -20,7 +20,9 @@
     "serve": "serve -s -n build",
     "lint:js": "eslint . --ext .js,.jsx --fix",
     "lint:css": "stylelint './src/**/*.{css,scss,js,jsx}' --fix",
-    "lint": "npm run lint:js && npm run lint:css"
+    "lint": "npm run lint:js && npm run lint:css",
+    "preversion": "npm run lint && npm test",
+    "postversion": "git push && git push --tags"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
